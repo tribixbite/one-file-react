@@ -1,0 +1,25 @@
+{
+  "name": "one-tsx-app",
+  "version": "1.0.0",
+  "description": "A complete React app in a single TSX file, rendered to static HTML with Bun",
+  "type": "module",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "bun-types": "latest"
+  },
+  "keywords": [
+    "bun",
+    "tsx",
+    "react",
+    "single-file",
+    "static-site",
+    "github-pages"
+  ],
+  "author": "Will Stone",
+  "license": "MIT"
+}
