@@ -1,24 +1,42 @@
 {
   "name": "one-tsx-app",
   "version": "1.0.0",
-  "description": "A complete React app in a single TSX file, rendered to static HTML with Bun",
+  "description": "A visceral takedown of JavaScript's evolution from 2016 to 2024, built with Bun",
   "type": "module",
+  "main": "server.tsx",
+  "scripts": {
+    "dev": "bun run --watch server.tsx",
+    "start": "bun run server.tsx",
+    "build": "bun build server.tsx --outdir ./dist --target bun",
+    "build:static": "bun run build-static.tsx",
+    "preview": "cd dist && python -m http.server 8000",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/bun": "^1.2.16",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "playwright": "^1.53.0"
   },
   "keywords": [
     "bun",
     "tsx",
+    "javascript",
+    "roast",
+    "state-of-js",
     "react",
     "single-file",
     "static-site",
-    "github-pages"
+    "github-pages",
+    "ssr"
   ],
   "author": "Will Stone",
   "license": "MIT"
