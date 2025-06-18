@@ -471,7 +471,7 @@ function App() {
               a config file longer than the Constitution, and a package manager that doesn't take coffee breaks.
             </p>
             <p className="bun-description">
-              <strong>This entire app?</strong> <strong>Two TypeScript files. One command. Zero build steps.</strong>
+              <strong>This entire app?</strong> <strong>A single .tsx file. Zero config.</strong>
               <br/>No webpack. No babel. No node_modules bigger than the International Space Station. 
               Just pure, unadulterated web development joy.
             </p>
