@@ -54,7 +54,7 @@ jobs:
           
           console.log('✅ Static HTML generated successfully!')
           console.log('📄 File: dist/index.html')
-          console.log(`📊 Size: ${(await Bun.file('./dist/index.html').size())} bytes`)
+          console.log(`📊 Size: ${(await Bun.file('./dist/index.html').size)} bytes`)
           EOF
           
           # Run the build script
